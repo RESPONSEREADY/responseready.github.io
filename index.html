@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My First HTML Skill for Alexa</title>
+        <style>
+            body { margin: 0; background-color: black; color: white;  }
+        </style>
+    </head>
+    <body>
+    <script src="https://cdn.beta.html.games.alexa.a2z.com/alexa-html/latest/alexa-html.js"></script>
+    <div id="hello"></div>
+    <script>
+    const alexa = new Alexa({version: '0.2'});
+    alexa.onReady((message) => {
+        document.getElementById('hello').innerHTML = '<b>:)Alexa is ready</b>';
+    });
+    alexa.onReadyFailed((error) => {
+        document.getElementById('hello').innerHTML = '<b>:( Alexa not ready:' + error + ' </b>';
+    });
+    </script>
+    </body>
+</html>
