@@ -13,10 +13,10 @@
     <script>
     const alexa = new Alexa({version: '0.2'});
     alexa.onReady((message) => {
-        document.getElementById('hello').innerHTML = '<b>:)Alexa is ready</b>';
+        document.getElementById('hello').innerHTML = '<h1>:)Alexa is ready</h1>';
     });
     alexa.onReadyFailed((error) => {
-        document.getElementById('hello').innerHTML = '<b>:( Alexa not ready:' + error + ' </b>';
+        document.getElementById('hello').innerHTML = '<h1>:( Alexa not ready:' + error + ' </h1>';
     });
     </script>
     </body>
