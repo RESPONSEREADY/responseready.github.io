@@ -8,16 +8,8 @@
         </style>
     </head>
     <body>
-    <script src="https://cdn.beta.html.games.alexa.a2z.com/alexa-html/latest/alexa-html.js"></script>
-    <div id="hello"></div>
-    <script>
-    const alexa = new Alexa({version: '0.2'});
-    alexa.onReady((message) => {
-        document.getElementById('hello').innerHTML = '<center><h1>:) Das funktioniert super!</h1><br><br><iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><a href="https://google.com">LINK</a></center>';
-    });
-    alexa.onReadyFailed((error) => {
-        document.getElementById('hello').innerHTML = '<center><h1>:( Das hat nicht funktioniert:' + error + ' </h1></center>';
-    });
-    </script>
+      <script src="https://cdn.beta.html.games.alexa.a2z.com/alexa-html/latest/alexa-html.js"></script>
+      <div id="loader"></div>
+      <script src="assets/js/alexa.js"></script>
     </body>
 </html>
